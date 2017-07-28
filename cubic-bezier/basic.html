@@ -9,9 +9,13 @@
       width: 50px;
       height: 50px;
       background-color: #ed3;
-      -webkit-transition:  all 2s;
+      /* -webkit-transition:  all 2s;
            -o-transition:  all 2s;
               transition:  all 2s;
+              */
+       -webkit-transition: all 2s cubic-bezier(.17, .86, .73, .14);
+       -o-transition: all 2s cubic-bezier(.17, .86, .73, .14);
+       transition: all 2s cubic-bezier(.17, .86, .73, .14);
     }
     .animation:hover {
       -webkit-transform:  translateX(100px);
@@ -19,6 +23,7 @@
            -o-transform:  translateX(100px);
               transform:  translateX(100px);
     }
+
   </style>
 </head>
 <body>
